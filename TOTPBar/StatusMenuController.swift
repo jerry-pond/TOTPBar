@@ -11,11 +11,14 @@ import Swifter
 
 class StatusMenuController: NSObject {
     @IBOutlet weak var statusMenu: NSMenu!
-    @IBOutlet weak var httpUrlMenuItem: NSMenuItem!
     
     var statusItem: NSStatusItem!
     var timerMenuItem: NSMenuItem!
+    var openMainWindowMenuItem: NSMenuItem!
     var httpServerSwitchMenuItem: NSMenuItem!
+    var httpUrlMenuItem: NSMenuItem!
+    var helpMenuItem: NSMenuItem!
+    var quitMenuItem: NSMenuItem!
     var authCodeMenuItems: [NSMenuItem] = []
 
     var statusIcon: NSImage!
@@ -66,10 +69,26 @@ class StatusMenuController: NSObject {
     }
 
     private func initStatusMenuItems() {
+        statusMenu.removeAllItems()
+
+        helpMenuItem = NSMenuItem(title: L("menu.help"), action: #selector(aboutClicked(sender:)), keyEquivalent: "h")
+        helpMenuItem.target = self
+
+        quitMenuItem = NSMenuItem(title: L("menu.quit"), action: #selector(quitClicked(sender:)), keyEquivalent: "q")
+        quitMenuItem.target = self
+
+        httpUrlMenuItem = NSMenuItem(title: "URL", action: #selector(urlClicked), keyEquivalent: "")
+        httpUrlMenuItem.target = self
+
+        statusMenu.addItem(httpUrlMenuItem)
+        statusMenu.addItem(NSMenuItem.separator())
+        statusMenu.addItem(helpMenuItem)
+        statusMenu.addItem(quitMenuItem)
+
         statusMenu.insertItem(NSMenuItem.separator(), at: 0)
-        let openMainWindowItem = NSMenuItem(title: L("main.open_window"), action: #selector(openMainWindowClicked), keyEquivalent: "")
-        openMainWindowItem.target = self
-        statusMenu.insertItem(openMainWindowItem, at: 0)
+        openMainWindowMenuItem = NSMenuItem(title: L("main.open_window"), action: #selector(openMainWindowClicked), keyEquivalent: "")
+        openMainWindowMenuItem.target = self
+        statusMenu.insertItem(openMainWindowMenuItem, at: 0)
 
         httpServerSwitchMenuItem = NSMenuItem(title: L("http.start"), action: #selector(switchHttpServerClicked), keyEquivalent: "")
         httpServerSwitchMenuItem.target = self
@@ -176,15 +195,9 @@ class StatusMenuController: NSObject {
 
     private func updateStaticMenuTitles() {
         timerMenuItem.title = EXPIRE_TIME_STR
-        if let openItem = statusMenu.items.first(where: { $0.action == #selector(openMainWindowClicked) }) {
-            openItem.title = L("main.open_window")
-        }
-        if let helpItem = statusMenu.items.first(where: { $0.action == #selector(aboutClicked(sender:)) }) {
-            helpItem.title = L("menu.help")
-        }
-        if let quitItem = statusMenu.items.first(where: { $0.action == #selector(quitClicked(sender:)) }) {
-            quitItem.title = L("menu.quit")
-        }
+        openMainWindowMenuItem.title = L("main.open_window")
+        helpMenuItem.title = L("menu.help")
+        quitMenuItem.title = L("menu.quit")
         updateHttpSwitchMenuItem()
         updateHttpURLMenuItem()
     }

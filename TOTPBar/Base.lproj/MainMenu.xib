@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TOTPBar" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="A7z-EV-ZJb" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="TOTPBar" customModuleProvider="target">
+            <connections>
+                <outlet property="httpUrlMenuItem" destination="rfh-jG-SkV" id="06I-be-NjD"/>
+                <outlet property="statusMenu" destination="275-6h-gP7" id="a0s-Jx-7x1"/>
+            </connections>
+        </customObject>
+        <menu id="275-6h-gP7">
+            <items>
+                <menuItem title="URL" id="rfh-jG-SkV">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="urlClicked:" target="A7z-EV-ZJb" id="zU0-PD-SGC"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="jPi-0a-iw1"/>
+                <menuItem title="帮助" keyEquivalent="h" id="lkD-dK-pdV">
+                    <connections>
+                        <action selector="aboutClickedWithSender:" target="A7z-EV-ZJb" id="SoV-Ca-TnY"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="退出" keyEquivalent="q" id="GAm-17-nOa">
+                    <connections>
+                        <action selector="quitClickedWithSender:" target="A7z-EV-ZJb" id="hFF-d1-o56"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="138.5" y="165.5"/>
+        </menu>
+    </objects>
+</document>

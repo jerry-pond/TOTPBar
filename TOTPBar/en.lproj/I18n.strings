@@ -1,0 +1,75 @@
+"common.ok" = "OK";
+
+"status.expire_time" = "Expires in: ";
+"status.copy_code.tooltip" = "Click to copy verification code";
+"status.delete_key.tooltip" = "Click to delete this authenticator";
+"status.edit_key.tooltip" = "Click to edit this authenticator";
+
+"menu.add" = "Add";
+"menu.edit" = "Edit";
+"menu.edit.done" = "Done Editing";
+"menu.delete" = "Delete";
+"menu.delete.done" = "Done Deleting";
+"menu.launch_at_login" = "Launch at Login";
+"menu.http.auto_start" = "Start HTTP service on app launch";
+"menu.cut" = "Cut";
+"menu.copy" = "Copy";
+"menu.paste" = "Paste";
+"menu.select_all" = "Select All";
+"menu.help" = "Help";
+"menu.quit" = "Quit";
+
+"language.label" = "Language:";
+"language.system" = "System";
+
+"auth.add.success" = "Added successfully. Please check the status menu.";
+"auth.edit.success" = "Updated successfully. Please check the status menu.";
+"auth.invalid_url" = "Unable to parse the key. Please check the OTPAuth URL.";
+
+"add.scan_qr" = "Scan QR Code...";
+"add.otpauth_url" = "OTPAuth URL:";
+"add.tag" = "Name:";
+"add.tag.placeholder" = "Optional: add a recognizable name for this verification code";
+
+"delete.mode.message" = "Delete mode is enabled. Select an authenticator from the status menu to delete it.\n\nAfter deleting, choose `%@` to leave delete mode.";
+"edit.mode.message" = "Edit mode is enabled. Select an authenticator from the status menu to edit it.\n\nAfter updating, choose `%@` to leave edit mode.";
+
+"import.success" = "Successfully imported %d records.";
+"export.title" = "Export Authentication Data";
+
+"http.start" = "Start HTTP Service";
+"http.stop" = "Stop HTTP Service";
+"http.open_url" = "Open http://localhost:%@ in browser";
+"http.start_failed" = "Failed to start HTTP service:\n%@";
+"http.port.window.title" = "HTTP Server Port Config";
+"http.port.label" = "HTTP Server Port:";
+"http.port.updated" = "Port updated.";
+"http.port.invalid" = "Port must be an integer greater than 0 and less than 65535. Please check and try again.";
+
+"launch_at_login.failed" = "Failed to update launch-at-login setting:\n%@";
+
+"main.open_window" = "Open TOTPBar";
+"main.authenticators" = "Authenticators";
+"main.details" = "Details";
+"main.name" = "Name";
+"main.otpauth_url" = "OTPAuth URL";
+"main.add" = "Add";
+"main.edit" = "Edit";
+"main.delete" = "Delete";
+"main.save" = "Save";
+"main.cancel" = "Cancel";
+"main.copy_code" = "Copy Code";
+"main.scan_qr" = "Scan QR...";
+"main.import" = "Import";
+"main.export" = "Export";
+"main.hide_window" = "Hide Window";
+"main.settings" = "Settings";
+"main.save_port" = "Save Port";
+"main.no_selection" = "No authenticator selected.";
+"main.invalid_code" = "Unable to generate a code for this authenticator.";
+"main.adding" = "Adding a new authenticator.";
+"main.delete.confirm" = "Delete `%@`?";
+"main.name.required" = "Name is required.";
+"main.copied" = "Verification code copied.";
+"main.drag_to_sort" = "Drag items to customize order";
+"main.scan_failed" = "Unable to recognize an OTPAuth QR code from this image.";

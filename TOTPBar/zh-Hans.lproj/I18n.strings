@@ -1,0 +1,75 @@
+"common.ok" = "确定";
+
+"status.expire_time" = "过期时间: ";
+"status.copy_code.tooltip" = "点击复制验证码";
+"status.delete_key.tooltip" = "点击删除认证记录";
+"status.edit_key.tooltip" = "点击编辑此认证信息";
+
+"menu.add" = "添加";
+"menu.edit" = "编辑";
+"menu.edit.done" = "完成编辑";
+"menu.delete" = "删除";
+"menu.delete.done" = "完成删除";
+"menu.launch_at_login" = "开机启动";
+"menu.http.auto_start" = "应用启动时开启 HTTP 服务";
+"menu.cut" = "剪切";
+"menu.copy" = "复制";
+"menu.paste" = "粘贴";
+"menu.select_all" = "全选";
+"menu.help" = "帮助";
+"menu.quit" = "退出";
+
+"language.label" = "语言：";
+"language.system" = "跟随系统";
+
+"auth.add.success" = "添加成功，请到状态栏菜单查看。";
+"auth.edit.success" = "修改成功，请到状态栏菜单查看。";
+"auth.invalid_url" = "无法解析密钥，请检查 OTPAuth URL。";
+
+"add.scan_qr" = "从二维码中识别...";
+"add.otpauth_url" = "OTPAuth URL：";
+"add.tag" = "标识：";
+"add.tag.placeholder" = "可选：为此验证码添加特定标识，便于识别";
+
+"delete.mode.message" = "已进入删除模式，请到状态栏菜单中删除认证信息。\n\n删除后，请执行 `%@` 退出删除模式。";
+"edit.mode.message" = "已进入编辑模式，请到状态栏菜单中选择要修改的认证信息。\n\n修改后，请执行 `%@` 退出编辑模式。";
+
+"import.success" = "成功导入 %d 条记录！";
+"export.title" = "导出认证信息";
+
+"http.start" = "开启 HTTP 服务";
+"http.stop" = "停止 HTTP 服务";
+"http.open_url" = "浏览器访问 http://localhost:%@";
+"http.start_failed" = "HTTP 服务启动失败:\n%@";
+"http.port.window.title" = "HTTP 服务端口设置";
+"http.port.label" = "HTTP 服务端口：";
+"http.port.updated" = "端口号已修改。";
+"http.port.invalid" = "端口号必须是大于 0 小于 65535 的整数，请检查后重试！";
+
+"launch_at_login.failed" = "更新开机启动设置失败:\n%@";
+
+"main.open_window" = "打开 TOTPBar";
+"main.authenticators" = "认证信息";
+"main.details" = "详情";
+"main.name" = "名称";
+"main.otpauth_url" = "OTPAuth URL";
+"main.add" = "添加";
+"main.edit" = "编辑";
+"main.delete" = "删除";
+"main.save" = "保存";
+"main.cancel" = "取消";
+"main.copy_code" = "复制验证码";
+"main.scan_qr" = "扫描二维码...";
+"main.import" = "导入";
+"main.export" = "导出";
+"main.hide_window" = "隐藏窗口";
+"main.settings" = "设置";
+"main.save_port" = "保存端口";
+"main.no_selection" = "未选择认证信息。";
+"main.invalid_code" = "无法为此认证信息生成验证码。";
+"main.adding" = "正在添加新的认证信息。";
+"main.delete.confirm" = "删除 `%@`？";
+"main.name.required" = "名称不能为空。";
+"main.copied" = "验证码已复制。";
+"main.drag_to_sort" = "拖拽条目来自定义顺序";
+"main.scan_failed" = "无法从此图片识别 OTPAuth 二维码。";

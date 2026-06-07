@@ -24,7 +24,9 @@ TOTPBar 是一个独立维护的项目，拥有聚焦的产品体验、现代 Sw
 
 ## 截图
 
-截图将按 TOTPBar 新品牌重新整理。
+![主窗口](screenshot/main.png)
+
+![HTTP API](screenshot/restful-api.png)
 
 ## 下载
 

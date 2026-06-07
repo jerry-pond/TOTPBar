@@ -24,7 +24,9 @@ It is maintained as an independent project with a focused product experience, mo
 
 ## Screenshots
 
-Screenshots are being refreshed for the TOTPBar brand.
+![Main window](screenshot/main.png)
+
+![HTTP API](screenshot/restful-api.png)
 
 ## Download
 
